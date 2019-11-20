@@ -1,0 +1,24 @@
+asyncapi: '1.2.0'
+info:
+  title: Betr Public API.
+  description: Betr public API for clients.
+  version: '0.1.0'
+
+servers:
+  - url: myapp.api:8080/v1
+    description: Local development server.
+    scheme: ws
+
+topics:
+  accounts.1.0.event.user.signup:
+    subscribe:
+      $ref: "#/components/messages/userSignedUp"
+
+components:
+  messages:
+    userSignedUp:
+      payload:
+        type: object
+        properties:
+          test:
+            type: string
