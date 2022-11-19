@@ -56,7 +56,7 @@
 		"rxjs": "^6.3.3",
 		"swagger-ui-express": "^4.0.7",
 		"type-graphql": "^0.17.5",
-		"typeorm": "^0.2.18",
+		"typeorm": "^0.2.25",
 		"typeorm-naming-strategies": "^1.1.0"
 	},
 	"devDependencies": {
